@@ -27,6 +27,7 @@ public class MyBinaryTree<K extends Comparable<K>> {
 	}
 	public static void main(String[] args) {
 		MyBinaryTree<Integer> myBinary = new MyBinaryTree<>();
+		
 		myBinary.add(56);
 		myBinary.add(30);
 		myBinary.add(22);
