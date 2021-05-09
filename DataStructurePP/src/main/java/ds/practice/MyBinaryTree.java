@@ -25,6 +25,24 @@ public class MyBinaryTree<K extends Comparable<K>> {
 		return current == null ? 0 : 1 + this.getSizeRecursive(current.left)
 									   + this.getSizeRecursive(current.right);
 	}
+	public static void main(String[] args) {
+		MyBinaryTree<Integer> myBinary = new MyBinaryTree<>();
+		myBinary.add(56);
+		myBinary.add(30);
+		myBinary.add(22);
+		myBinary.add(11);
+		myBinary.add(3);
+		myBinary.add(16);
+		myBinary.add(40);
+		myBinary.add(60);
+		myBinary.add(95);
+		myBinary.add(65);
+		myBinary.add(63);
+		myBinary.add(76);
+		
+	int size = myBinary.getSize();	
+	System.out.println(size);
+	}
 
 }
 class MyBinaryNode<K extends Comparable<K>> {
